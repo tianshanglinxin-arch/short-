@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090b12">
+<title>AI SHORTS STUDIO — ショートドラマ制作室</title>
+<style>
+:root{color-scheme:dark;--bg:#090b12;--panel:#111522;--panel2:#171c2c;--line:#293148;--text:#f4f6ff;--muted:#9aa4bb;--purple:#9b87ff;--cyan:#68e1dc;--pink:#ff85b5;--green:#83e6aa;--warn:#f4ce80;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% -20%,#25204b 0,transparent 35%),radial-gradient(ellipse at 100% 5%,#10313e 0,transparent 25%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}.shell{max-width:1180px;margin:0 auto;padding:20px 18px 70px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0 26px}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--purple),var(--cyan));display:grid;place-items:center;color:#0a0d18;font-size:22px;font-weight:900;box-shadow:0 8px 26px #8e7bff36}.brand-title{font-weight:900;letter-spacing:.12em;font-size:15px}.brand-sub{font-size:11px;color:var(--muted);letter-spacing:.08em}.status{border:1px solid #315d54;color:var(--green);background:#142722;border-radius:99px;padding:7px 11px;font-size:11px;white-space:nowrap}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:stretch;margin-bottom:22px}.hero-copy,.hero-art{border:1px solid var(--line);border-radius:24px;background:linear-gradient(140deg,#161a2b,#0e1420);overflow:hidden}.hero-copy{padding:30px}.eyebrow{font-size:11px;letter-spacing:.16em;color:var(--cyan);font-weight:800}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.07;margin:12px 0 14px;letter-spacing:-.04em}.hero h1 span{background:linear-gradient(100deg,var(--purple),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#bac2d7;max-width:610px;font-size:14px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.primary,.secondary,.quiet,.mini{border:0;border-radius:12px;padding:12px 16px;font-weight:800}.primary{background:linear-gradient(100deg,var(--purple),#7ddad9);color:#0a0d18;box-shadow:0 8px 24px #8272ef2c}.secondary{background:#252b43;border:1px solid #414c6c;color:#f5f6ff}.quiet{background:transparent;color:#c8cde0;border:1px solid var(--line)}.mini{padding:7px 10px;border:1px solid #343c56;background:#1b2133;color:#dfe4f8;font-size:11px;border-radius:9px}.hero-art{min-height:250px;position:relative;display:flex;align-items:end;padding:22px;background:linear-gradient(180deg,transparent 15%,#0c0f19ef 100%),radial-gradient(circle at 65% 25%,#765dd7 0,transparent 20%),radial-gradient(circle at 40% 45%,#3da2ae 0,transparent 24%),linear-gradient(135deg,#27314e,#15172a 45%,#1c2336)}.hero-art:before{content:"";position:absolute;width:150px;height:210px;border-radius:80px 80px 24px 24px;background:linear-gradient(160deg,#c0a8ff,#26375b 65%);right:25%;top:26px;transform:rotate(7deg);opacity:.78;box-shadow:38px 10px 0 -12px #e0d9ff55}.hero-art:after{content:"";position:absolute;width:190px;height:3px;background:var(--cyan);right:0;top:45%;box-shadow:0 0 28px var(--cyan);transform:rotate(-25deg);opacity:.8}.art-label{z-index:1;position:relative}.art-label strong{display:block;font-size:20px}.art-label small{color:#bac2d7}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 24px}.metric{padding:15px 17px;border-radius:16px;background:#101522d9;border:1px solid var(--line)}.metric strong{font-size:23px;display:block}.metric span{font-size:11px;color:var(--muted)}.workspace{display:grid;grid-template-columns:350px 1fr;gap:20px;align-items:start}.panel{background:#101420f2;border:1px solid var(--line);border-radius:20px;overflow:hidden}.panel-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;align-items:center}.panel-head h2,.panel-head h3{font-size:15px;margin:0}.step{font-size:10px;color:var(--cyan);letter-spacing:.1em}.panel-body{padding:20px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}.field label{font-size:12px;font-weight:750;color:#dce1f4}.field small{font-size:10px;color:var(--muted)}input,select,textarea{background:#0b0f19;border:1px solid #30384f;border-radius:10px;padding:11px 12px;color:var(--text);width:100%;min-width:0}textarea{min-height:78px;resize:vertical}input::placeholder,textarea::placeholder{color:#626c84}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}.chiprow{display:flex;flex-wrap:wrap;gap:7px}.chip{background:#181e30;border:1px solid #333c58;border-radius:99px;padding:7px 10px;color:#bbc4da;font-size:11px}.chip.active{border-color:var(--purple);background:#292442;color:#fff}.form-note{padding:12px;background:#191c2b;border:1px solid #34344f;border-radius:12px;font-size:11px;color:#b7bfd5;margin-top:10px}.form-note strong{color:var(--warn)}.wide{width:100%;margin-top:7px}.workmain{min-width:0}.tabs{display:flex;gap:7px;padding:12px;border-bottom:1px solid var(--line);overflow-x:auto}.tab{border:1px solid transparent;background:transparent;color:var(--muted);border-radius:10px;padding:9px 12px;white-space:nowrap;font-size:12px;font-weight:750}.tab.active{background:#22213b;border-color:#49416f;color:#f4f2ff}.pane{display:none}.pane.active{display:block}.result-title{padding:21px 22px 15px;display:flex;align-items:start;justify-content:space-between;gap:12px}.result-title h2{margin:0;font-size:21px}.result-title p{margin:5px 0 0;color:var(--muted);font-size:12px}.actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.story-card{margin:0 20px 15px;border:1px solid #343954;background:linear-gradient(135deg,#181c30,#111724);border-radius:16px;padding:18px}.story-card h3{font-size:13px;margin:0 0 9px;color:var(--cyan)}.story-card p{white-space:pre-wrap;color:#dce1f4;font-size:13px;margin:0}.scene-list{padding:0 20px 20px;display:grid;gap:12px}.scene{border:1px solid var(--line);border-radius:16px;background:#121725;overflow:hidden}.scene-top{padding:14px 15px;display:flex;align-items:start;justify-content:space-between;gap:10px;background:#171c2b}.scene-number{font-size:10px;letter-spacing:.12em;color:var(--cyan);font-weight:900}.scene h3{margin:3px 0 0;font-size:14px}.time{font-size:11px;color:#c4c9dc;border:1px solid #3a425b;padding:4px 7px;border-radius:8px;white-space:nowrap}.scene-content{padding:14px 15px;display:grid;gap:12px}.scene-label{font-size:10px;letter-spacing:.08em;color:#9a8aff;font-weight:800;margin-bottom:4px}.scene-text{font-size:12px;color:#dae0f1;white-space:pre-wrap}.prompt-box{background:#0b101a;border:1px solid #293247;border-radius:10px;padding:11px;font-size:11px;color:#c4cce0;white-space:pre-wrap;overflow-wrap:anywhere}.scene-buttons{display:flex;gap:7px;flex-wrap:wrap}.empty{margin:20px;border:1px dashed #3a4260;border-radius:16px;padding:35px 20px;text-align:center;color:var(--muted)}.empty .big{font-size:32px;margin-bottom:10px}.empty strong{display:block;color:#e9ecf8;margin-bottom:5px}.empty p{font-size:12px;margin:0}.footer-note{font-size:11px;color:#7f8aa4;line-height:1.65;padding:18px 3px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,15px);background:#e7e4ff;color:#161427;padding:11px 16px;border-radius:12px;font-size:12px;font-weight:800;box-shadow:0 10px 30px #0008;opacity:0;pointer-events:none;transition:.2s;z-index:9;max-width:calc(100vw - 32px)}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}.subheading{font-size:12px;font-weight:850;margin:0 0 10px;color:#e2e5f5}.saved-list{display:grid;gap:9px;padding:0 20px 20px}.saved-item{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;justify-content:space-between;gap:10px;align-items:center}.saved-item strong{font-size:12px}.saved-item small{display:block;color:var(--muted);font-size:10px}.checklist{display:grid;gap:9px}.checkrow{display:flex;gap:9px;align-items:start;font-size:12px;color:#d3d9eb}.checkrow input{width:auto;margin-top:4px;accent-color:#9b87ff}.tag{display:inline-block;font-size:10px;padding:4px 7px;border-radius:7px;background:#20273a;color:#bec8de}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero-art{min-height:200px}.workspace{grid-template-columns:1fr}.metrics{gap:8px}.metric{padding:12px}.metric strong{font-size:20px}.shell{padding:12px 12px 50px}.hero-copy{padding:24px}.panel-body{padding:16px}.result-title{padding:17px 16px}.scene-list{padding:0 12px 14px}.story-card{margin:0 12px 12px}.panel-head{padding:16px}.saved-list{padding:0 12px 14px}}
+@media(max-width:420px){.brand-title{font-size:12px}.status{font-size:10px;padding:6px 8px}.hero h1{font-size:37px}.hero-copy{padding:21px}.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.metric span{font-size:10px}.metric strong{font-size:18px}.twocol{grid-template-columns:1fr}.result-title{display:block}.actions{justify-content:flex-start;margin-top:12px}.scene-top{padding:12px}.scene-content{padding:12px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand"><div class="logo">▶</div><div><div class="brand-title">AI SHORTS STUDIO</div><div class="brand-sub">SHORT FILM CREATION WORKSPACE</div></div></div>
+    <div class="status">● 試作版 / ローカル動作</div>
+  </header>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">YOUR STORY. YOUR CINEMA.</div>
+      <h1>物語を、<br><span>映画にする。</span></h1>
+      <p>企画・脚本・シーン設計・映像生成プロンプトをひとつの場所でまとめる、ショートAIドラマ制作スタジオ。スマホからでも制作を進められます。</p>
+      <div class="hero-actions"><button class="primary" id="jumpBtn">＋ 新しいドラマを作る</button><button class="secondary" id="loadDemoBtn">サンプルを見る</button></div>
+    </div>
+    <div class="hero-art"><div class="art-label"><strong>STORY → SCENES → FILM</strong><small>企画から完成まで、ひとつずつ。</small></div></div>
+  </section>
+  <section class="metrics">
+    <div class="metric"><strong id="metricScenes">—</strong><span>シーン設計</span></div>
+    <div class="metric"><strong id="metricDuration">—</strong><span>目標尺</span></div>
+    <div class="metric"><strong id="metricSaved">0</strong><span>保存プロジェクト</span></div>
+  </section>
+  <div class="workspace" id="workspace">
+    <aside class="panel" id="setupPanel">
+      <div class="panel-head"><h2>🎬 ドラマ企画</h2><span class="step">STEP 01 / SETUP</span></div>
+      <div class="panel-body">
+        <div class="field"><label for="projectTitle">プロジェクト名</label><input id="projectTitle" maxlength="80" placeholder="例：最後の手紙"></div>
+        <div class="field"><label for="idea">物語のきっかけ・テーマ</label><textarea id="idea" maxlength="1000" placeholder="例：毎日駅で会う老人に傘を貸した高校生。ある雨の日、思いがけない手紙が届く。"></textarea><small>一文だけでもOK。具体的なほどシーンを作りやすくなります。</small></div>
+        <div class="twocol">
+          <div class="field"><label for="genre">ジャンル</label><select id="genre"><option value="感動">感動・泣ける</option><option value="恋愛">恋愛</option><option value="ミステリー">ミステリー</option><option value="青春">青春</option><option value="SF">SF・近未来</option><option value="コメディ">コメディ</option><option value="ファンタジー">ファンタジー</option></select></div>
+          <div class="field"><label for="duration">目標尺</label><select id="duration"><option value="1">約1分</option><option value="3">約3分</option><option value="5" selected>約5分</option></select></div>
+        </div>
+        <div class="twocol">
+          <div class="field"><label for="style">映像スタイル</label><select id="style"><option value="実写映画風">実写映画風</option><option value="アニメ映画風">アニメ映画風</option><option value="3D CG映画風">3D CG映画風</option><option value="手描きアート風">手描きアート風</option></select></div>
+          <div class="field"><label for="ratio">画面比率</label><select id="ratio"><option value="9:16">縦型 9:16</option><option value="16:9">横型 16:9</option><option value="1:1">正方形 1:1</option></select></div>
+        </div>
+        <div class="field"><label for="mood">映像・感情の雰囲気</label><select id="mood"><option value="静かで感情的、自然な演技">静かで感情的</option><option value="緊張感があり、謎めいた空気">緊張感・謎めいた</option><option value="明るく温かく、希望がある">温かく希望がある</option><option value="スピード感があり、ドラマチック">スピード感・ドラマチック</option><option value="幻想的で夢のような">幻想的</option></select></div>
+        <div class="subheading">主人公の一貫性</div>
+        <div class="twocol">
+          <div class="field"><label for="character">主人公の名前</label><input id="character" maxlength="40" placeholder="例：結衣"></div>
+          <div class="field"><label for="age">年齢・立場</label><input id="age" maxlength="50" placeholder="例：高校生"></div>
+        </div>
+        <div class="field"><label for="appearance">外見・服装メモ</label><textarea id="appearance" maxlength="300" placeholder="例：黒髪のボブ、紺色の制服、赤い傘"></textarea><small>全シーンのプロンプトに反映します。</small></div>
+        <button class="primary wide" id="generateBtn">✦ 制作パックを作成</button>
+        <div class="form-note"><strong>この試作版について：</strong><br>企画・シーン構成・プロンプトをブラウザ内で作成します。AI動画そのものの生成には、別途動画生成サービスとの連携が必要です。</div>
+      </div>
+    </aside>
+    <main class="panel workmain">
+      <div class="panel-head"><h2>制作ワークスペース</h2><span class="step">STEP 02 / CREATE</span></div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="story">企画・脚本</button><button class="tab" data-tab="scenes">シーン制作</button><button class="tab" data-tab="aiPrompt">AI連携用プロンプト</button><button class="tab" data-tab="saved">保存データ</button>
+      </div>
+      <section class="pane active" id="pane-story">
+        <div id="emptyState" class="empty"><div class="big">✦</div><strong>あなたの最初のドラマを作ろう</strong><p>左側の企画フォームを入力して「制作パックを作成」を押してください。<br>サンプルを見ることもできます。</p></div>
+        <div id="storyResult" class="hidden">
+          <div class="result-title"><div><h2 id="resultTitle">タイトル</h2><p id="resultMeta"></p></div><div class="actions"><button class="mini" id="copyAllBtn">全内容をコピー</button><button class="mini" id="exportTxtBtn">TXT保存</button><button class="mini" id="exportJsonBtn">JSON保存</button></div></div>
+          <div class="story-card"><h3>LOGLINE / 物語の核</h3><p id="logline"></p></div>
+          <div class="story-card"><h3>STORY ARC / あらすじ</h3><p id="synopsis"></p></div>
+          <div class="story-card"><h3>DIRECTOR'S NOTES / 演出方針</h3><p id="directorNotes"></p></div>
+          <div class="story-card"><h3>PRODUCTION CHECK / 制作チェック</h3><div class="checklist" id="checklist"></div></div>
+        </div>
+      </section>
+      <section class="pane" id="pane-scenes"><div id="sceneEmpty" class="empty"><div class="big">▧</div><strong>シーン設計はまだありません</strong><p>企画フォームから制作パックを作成してください。</p></div><div class="scene-list hidden" id="sceneList"></div></section>
+      <section class="pane" id="pane-aiPrompt">
+        <div class="result-title"><div><h2>AI制作アシスタント用プロンプト</h2><p>外部の文章生成AIに貼り付けて、脚本の詳細化に使います。</p></div></div>
+        <div class="story-card"><h3>01 / 脚本を詳しくする</h3><p class="prompt-box" id="scriptPrompt">まず企画フォームから制作パックを作成してください。</p><button class="secondary wide" id="copyScriptPrompt">脚本プロンプトをコピー</button></div>
+        <div class="story-card"><h3>02 / 映像の一貫性を高める</h3><p class="prompt-box" id="consistencyPrompt">まず企画フォームから制作パックを作成してください。</p><button class="secondary wide" id="copyConsistencyPrompt">一貫性プロンプトをコピー</button></div>
+        <div class="form-note">APIキーをこのHTMLに直接書くと他人に見られる可能性があります。実際のAI APIをつなぐ段階では、キーを安全に管理するバックエンドが必要です。</div>
+      </section>
+      <section class="pane" id="pane-saved">
+        <div class="result-title"><div><h2>保存したプロジェクト</h2><p>この端末のブラウザに保存されたデータです。</p></div><div class="actions"><button class="mini" id="importBtn">JSON読込</button><button class="mini" id="clearSavedBtn">一覧を消去</button><input id="importFile" class="hidden" type="file" accept="application/json,.json"></div></div>
+        <div id="savedList" class="saved-list"><div class="empty"><strong>保存データはありません</strong><p>制作パックを作ったあと「この企画を保存」から保存できます。</p></div></div>
+        <div style="padding:0 20px 20px"><button id="saveProjectBtn" class="primary wide">現在の企画を保存</button></div>
+      </section>
+    </main>
+  </div>
+  <div class="footer-note">AI SHORTS STUDIO · Prototype 0.1 · 入力内容はこのページから外部送信しません。プロジェクト保存にはブラウザのローカル保存を使用します。ブラウザのデータ削除や端末変更に備え、JSON/TXTを書き出してバックアップしてください。実際のAI動画生成はまだ未接続です。</div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id);
+const STORAGE_KEY='aiShortsStudio.projects.v1';
+let currentProject=null;
+let savedProjects=readSaved();
+const beatSets={
+ '感動':[
+  ['心をつかむ始まり','主人公の日常に、小さな違和感や忘れられない出来事が起こる。','観客が続きを知りたくなる表情や小道具を見せる。'],
+  ['いつもの日々','主人公が大切にしている人・場所・習慣を描く。','自然な会話と細かな仕草で関係性を見せる。'],
+  ['小さな出会い','何気ない出来事が主人公の心を少しずつ変えていく。','手元、視線、距離感の変化を丁寧に描く。'],
+  ['すれ違い','主人公が本当の気持ちを伝えられず、誤解や後悔が生まれる。','台詞を詰め込みすぎず、沈黙を使う。'],
+  ['思いがけない手がかり','過去の約束や相手の優しさにつながるものを見つける。','手紙、写真、傘など小道具を象徴的に撮る。'],
+  ['決断の瞬間','主人公が迷いながらも、自分から一歩を踏み出す。','表情の変化から行動へつなぐ。'],
+  ['感情の頂点','伝えたかった思いが届く、または届いたと気づく瞬間が訪れる。','大げさな演技より、短い台詞と呼吸を大切にする。'],
+  ['余韻のある結末','冒頭の小道具や場所が違う意味を持って再登場する。','静かなラストショットで感情を残す。']
+ ],
+ '恋愛':[
+  ['印象的な出会い','主人公が相手の意外な一面に気づく。','視線の交差と自然な距離感を見せる。'],['近づく距離','短い会話や共通の習慣がふたりの距離を縮める。','日常の音と柔らかな光を使う。'],['言えない本音','伝えたい言葉を飲み込み、タイミングを逃してしまう。','手元や視線に緊張を表す。'],['すれ違い','小さな誤解によって、ふたりの関係が揺れる。','会話の間と画面内の距離で表現する。'],['気づき','相手が自分のためにしてくれたことを知る。','さりげない証拠をクローズアップする。'],['勇気を出す','主人公が自分の言葉で本当の気持ちを伝えようとする。','一度深呼吸してから顔を上げる。'],['答え','相手の反応によって、関係が新しい段階へ進む。','台詞と表情を中心に撮る。'],['未来への一歩','ふたりの関係に小さな希望が生まれる。','印象的な場所を再び見せて締める。']
+ ],
+ 'ミステリー':[
+  ['謎の発見','日常に説明できない小さな異変が現れる。','重要な手がかりを画面の隅に置く。'],['最初の仮説','主人公が違和感の原因を探し始める。','調査の過程を短いカットでつなぐ。'],['新しい手がかり','別の証拠が見つかり、最初の考えが揺らぐ。','同じ小道具を異なる角度から見せる。'],['疑い','身近な人物の言動に矛盾が生まれる。','会話の沈黙と反応を強調する。'],['誤った答え','一度は謎が解けたように見えるが、違和感が残る。','安心させてから小さな矛盾を見せる。'],['真相への道','過去の情報が一つにつながる。','手がかりをテンポよく再提示する。'],['真相','主人公が最も重要な事実を理解する。','説明台詞より証拠と反応で示す。'],['最後の余白','解決後にも、観客が考えられる一つの余韻を残す。','最後の映像に意味を持たせる。']
+ ],
+ '青春':[
+  ['忘れられない一日','主人公がいつもの場所で、いつもとは違う一歩を踏み出す。','自然光と軽やかなカメラで始める。'],['仲間との時間','仲間との会話や小さな約束が描かれる。','動きのある画面と自然な笑顔。'],['目標が見える','主人公がやりたいことと、今の自分の差に気づく。','練習や準備を短いモンタージュで見せる。'],['壁にぶつかる','失敗や誤解で自信が揺らぐ。','音数を減らし孤独を見せる。'],['仲間の言葉','意外な一言や行動が主人公を支える。','表情の反応を長めに取る。'],['もう一度挑戦','主人公が自分なりの答えを出す。','テンポを上げ、行動を中心に見せる。'],['本番','努力の成果が試される。','動きと表情を交互に映す。'],['次の季節へ','完璧な結果でなくても、主人公が成長したことを示す。','冒頭と対になる風景で締める。']
+ ],
+ 'SF':[
+  ['異常なサイン','主人公の身の回りで、未来や技術に関わる異常が起きる。','光や画面表示を控えめに使い現実感を保つ。'],['世界のルール','新しい技術が日常をどう変えたかを見せる。','短い行動で設定を理解させる。'],['予想外の発見','技術の裏に、個人的な秘密が隠れているとわかる。','データや小道具を物語の手がかりにする。'],['選択の危機','主人公は便利さと大切なものの間で迷う。','冷たい光と人間的な表情を対比する。'],['隠された事実','最初の出来事の意味が変わる情報を得る。','過去の映像と小道具を結びつける。'],['決断','主人公が技術に任せるのではなく、自分の意志で行動する。','静かな決意から大きな行動へ。'],['対峙','主人公の選択が結果をもたらす。','視線と音で緊張感を作る。'],['未来の余韻','世界が少し変わり、主人公の選択が残したものを示す。','象徴的な光景で締める。']
+ ],
+ 'コメディ':[
+  ['奇妙な始まり','主人公が小さなトラブルに巻き込まれる。','状況がすぐ伝わる画面を作る。'],['勘違い','簡単に解決できそうな問題が、誤解で広がる。','表情と間をコミカルに使う。'],['悪化する状況','主人公の工夫が思わぬ方向に進む。','テンポの良い短いカット。'],['ごまかし','主人公が何とか取り繕おうとする。','反応ショットを増やす。'],['まさかの協力者','意外な人物が状況を変えるヒントをくれる。','真面目な演出とのギャップを作る。'],['作戦実行','主人公が最後の作戦に挑む。','リズムと動きで盛り上げる。'],['逆転','予想とは違う形で問題が解決する。','意外性のあるリアクションを見せる。'],['オチ','最後にもう一段の小さな笑いを置く。','最後の一拍を大切にする。']
+ ],
+ 'ファンタジー':[
+  ['不思議な発見','主人公が普通では説明できない品物や現象に出会う。','光や空気感で不思議さを演出する。'],['新しい約束','その世界だけのルールや願いが示される。','説明を短く、行動で伝える。'],['最初の変化','不思議な力が主人公の日常に影響する。','小さな視覚効果から始める。'],['代償','願いには思いがけない条件があるとわかる。','演出を落ち着かせ、感情を中心にする。'],['仲間や記憶','主人公を支える存在や、忘れていた記憶が現れる。','色や小道具を繰り返してつなぐ。'],['選択','主人公が何を大切にするか決める。','光と影の対比を使う。'],['奇跡の瞬間','決断によって世界に変化が起きる。','大きな現象と人物の反応を交互に見せる。'],['物語の余韻','不思議な出来事が主人公の心に残る。','冒頭と似た構図で結末を作る。']
+ ]
+};
+const durationCounts={1:5,3:8,5:12};
+const durations={1:[8,12,12,14,14],3:[15,20,20,25,25,25,25,25],5:[20,25,25,25,25,30,30,30,30,25,20,15]};
+const styleMap={'実写映画風':'cinematic live-action Japanese short film, natural skin texture, realistic lighting, subtle acting','アニメ映画風':'high-quality original anime film, expressive character acting, cinematic composition, detailed background','3D CG映画風':'high-quality original 3D animated film, cinematic lighting, expressive character animation, detailed materials','手描きアート風':'hand-painted cinematic illustration, expressive brushwork, carefully composed frame, emotional atmosphere'};
+function readSaved(){try{const a=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}}
+function writeSaved(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(savedProjects));updateMetrics();renderSaved()}catch(e){toast('保存できません。JSONで書き出してバックアップしてください。')}}
+function toast(msg){const t=$('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2300)}
+function val(id){return $(id).value.trim()}
+function getForm(){return {id:currentProject?.id||('p-'+Date.now()),title:val('projectTitle')||'タイトル未設定のドラマ',idea:val('idea')||'小さな出来事をきっかけに、主人公が大切なものに気づく物語。',genre:val('genre'),duration:Number(val('duration')),style:val('style'),ratio:val('ratio'),mood:val('mood'),character:val('character')||'主人公',age:val('age')||'若い主人公',appearance:val('appearance')||'落ち着いた色の普段着、自然な表情',updatedAt:new Date().toISOString()}}
+function pickBeat(genre,i){const a=beatSets[genre]||beatSets['感動'];return a[i%a.length]}
+function mkScene(project,i,n){const beat=pickBeat(project.genre,i);const ds=durations[project.duration]||durations[5];const dur=ds[i]||Math.round(project.duration*60/n);const start=ds.slice(0,i).reduce((a,b)=>a+b,0);const actions=[
+`冒頭で観客の注意を引く。${project.idea}`,`主人公の普段の様子と心の状態を見せる。`,`テーマにつながる出来事が起きる。`,`主人公の気持ちが揺れ、選択を迫られる。`,`物語の鍵となる情報や行動が現れる。`,`主人公が自分なりの答えを選ぶ。`,`感情が最も高まる瞬間を描く。`,`余韻を残し、テーマを印象づける。`];
+const detail=beat[1]+' '+actions[i%actions.length];
+const director=`${beat[2]} ${project.mood}。セリフだけで説明せず、表情・視線・手の動き・周囲の音で感情を見せる。`;
+const prompt=`${styleMap[project.style]}. ${project.ratio} aspect ratio. Scene ${i+1} of a continuous short film. Main character: ${project.character}, ${project.age}, appearance and wardrobe must stay consistent: ${project.appearance}. Setting and action: ${detail} Mood: ${project.mood}. ${beat[2]} Cohesive color grading, believable motion, natural body proportions, consistent character identity, no subtitles, no on-screen text, no logos. Camera: medium shot with a slow cinematic push-in, clear subject, no abrupt cuts.`;
+const dialogue=i===0?`${project.character}（心の声）：あの日のことを、まだ忘れられない。`:i===n-1?`${project.character}：きっと、これでよかったんだ。`:i===Math.floor(n*0.55)?`${project.character}：本当は、ずっと伝えたかった。`:'';
+return {number:i+1,title:beat[0],start,duration:dur,detail,director,dialogue,prompt}}
+function buildProject(){const p=getForm();const n=durationCounts[p.duration]||8;p.scenes=Array.from({length:n},(_,i)=>mkScene(p,i,n));p.logline=`${p.idea} ${p.character}（${p.age}）は、ある出来事を通じて自分にとって本当に大切なものと向き合う。`;
+p.synopsis=`【始まり】${p.scenes[0].detail}\n\n【展開】${p.scenes.slice(1,Math.max(2,Math.floor(n*.45))).map(s=>s.detail).join('\n')}\n\n【転機】${p.scenes.slice(Math.floor(n*.45),Math.max(Math.floor(n*.45)+1,Math.floor(n*.75))).map(s=>s.detail).join('\n')}\n\n【結末】${p.scenes.slice(Math.floor(n*.75)).map(s=>s.detail).join('\n')}`;
+p.directorNotes=`ジャンル：${p.genre}。映像：${p.style}。雰囲気：${p.mood}。\n画面比率：${p.ratio}。目標尺：約${p.duration}分。\n主人公：${p.character}（${p.age}）。外見・服装：${p.appearance}。\n\n全シーンで主人公の顔・髪型・服装・年齢・小道具を維持する。短い生成クリップを編集でつなぎ、色味と音量を揃える。人物が映る場合は、正面・横顔・手元などの画角を分散させ、長い動作を一つの生成クリップに詰め込まない。`;
+p.aiScriptPrompt=`あなたは短編映画の脚本家兼監督です。以下の条件で、映像生成AIを使って制作しやすい日本語のショートドラマ脚本を作成してください。\nタイトル：${p.title}\nテーマ：${p.idea}\nジャンル：${p.genre}\n目標尺：約${p.duration}分\n映像スタイル：${p.style}\n画面比率：${p.ratio}\n雰囲気：${p.mood}\n主人公：${p.character}（${p.age}）\n外見・服装：${p.appearance}\n\n要件：起承転結を明確にする。シーンごとに番号・秒数・場所・登場人物・映像描写・台詞・環境音・カメラ指示を出す。冒頭3秒に引きを作る。セリフは自然な日本語にする。最後は印象に残る結末にする。生成動画の人物の外見・服装・小道具を全シーンで統一する。AI動画で作りやすいよう各シーンを短い一動作に分ける。まず全シーンの構成を出し、その後に完成台本を提示する。`;
+p.consistencyPrompt=`以下のドラマの映像生成プロンプトを、人物と世界観に一貫性が出るように整えてください。\n作品：${p.title}／${p.genre}／${p.style}／${p.ratio}\n主人公：${p.character}、${p.age}\n外見・服装：${p.appearance}\n全体の雰囲気：${p.mood}\n\n各シーンで、顔・髪型・体格・服装・小道具・時間帯・光の方向・色調を維持してください。各プロンプトに主人公の固定特徴を必要な範囲で繰り返し記載し、1クリップにつき主動作はひとつ、カメラ動作もひとつにしてください。映像上の文字やロゴを生成しないでください。\n\n企画：${p.idea}\nシーン構成：\n${p.scenes.map(s=>`${s.number}. ${s.title}：${s.detail}`).join('\n')}`;
+p.plainText=makePlainText(p);return p}
+function fmtTime(s){const m=Math.floor(s/60),sec=s%60;return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`}
+function makePlainText(p){return `${p.title}\nAI SHORTS STUDIO 制作パック\nジャンル：${p.genre} / 約${p.duration}分 / ${p.style} / ${p.ratio}\n\n【物語の核】\n${p.logline}\n\n【あらすじ】\n${p.synopsis}\n\n【演出方針】\n${p.directorNotes}\n\n【シーン設計】\n${(p.scenes||[]).map(s=>`\nSCENE ${String(s.number).padStart(2,'0')} ${s.title} (${fmtTime(s.start)}–${fmtTime(s.start+s.duration)})\n内容：${s.detail}\n演出：${s.director}\n台詞：${s.dialogue||'（台詞なし／環境音と表情で表現）'}\n動画生成プロンプト：${s.prompt}`).join('\n')}\n\n【AI脚本プロンプト】\n${p.aiScriptPrompt}`}
+function renderProject(p){currentProject=p;$('emptyState').classList.add('hidden');$('storyResult').classList.remove('hidden');$('sceneEmpty').classList.add('hidden');$('sceneList').classList.remove('hidden');$('resultTitle').textContent=p.title;$('resultMeta').textContent=`${p.genre} · 約${p.duration}分 · ${p.style} · ${p.ratio} · ${p.scenes.length}シーン`;$('logline').textContent=p.logline;$('synopsis').textContent=p.synopsis;$('directorNotes').textContent=p.directorNotes;$('scriptPrompt').textContent=p.aiScriptPrompt;$('consistencyPrompt').textContent=p.consistencyPrompt;$('sceneList').innerHTML='';p.scenes.forEach(s=>{const el=document.createElement('article');el.className='scene';el.innerHTML=`<div class="scene-top"><div><div class="scene-number">SCENE ${String(s.number).padStart(2,'0')}</div><h3></h3></div><div class="time"></div></div><div class="scene-content"><div><div class="scene-label">STORY / シーン内容</div><div class="scene-text detail"></div></div><div><div class="scene-label">DIRECTING / 演出</div><div class="scene-text director"></div></div><div><div class="scene-label">DIALOGUE / 台詞</div><div class="scene-text dialogue"></div></div><div><div class="scene-label">VIDEO PROMPT / 映像生成プロンプト</div><div class="prompt-box prompt"></div></div><div class="scene-buttons"><button class="mini copyScene">このプロンプトをコピー</button><button class="mini copyDialogue">台詞をコピー</button></div></div>`;el.querySelector('h3').textContent=s.title;el.querySelector('.time').textContent=`${fmtTime(s.start)}–${fmtTime(s.start+s.duration)} · ${s.duration}秒`;el.querySelector('.detail').textContent=s.detail;el.querySelector('.director').textContent=s.director;el.querySelector('.dialogue').textContent=s.dialogue||'（台詞なし／表情と環境音で表現）';el.querySelector('.prompt').textContent=s.prompt;el.querySelector('.copyScene').addEventListener('click',()=>copyText(s.prompt));el.querySelector('.copyDialogue').addEventListener('click',()=>copyText(s.dialogue||'（台詞なし）'));$('sceneList').appendChild(el)});
+$('checklist').innerHTML='';['脚本の流れと結末を確認する','主人公の見た目・服装の参照画像を用意する','各クリップの長さとカメラ動作を確認する','字幕・ナレーション・BGMの権利を確認する','完成後、スマホで縦横比と音量をチェックする'].forEach((t,i)=>{const lab=document.createElement('label');lab.className='checkrow';lab.innerHTML=`<input type="checkbox" data-check="${i}"><span></span>`;lab.querySelector('span').textContent=t;$('checklist').appendChild(lab)});
+updateMetrics();switchTab('story')}
+function updateMetrics(){$('metricScenes').textContent=currentProject?currentProject.scenes.length:'—';$('metricDuration').textContent=currentProject?`約${currentProject.duration}分`:'—';$('metricSaved').textContent=String(savedProjects.length)}
+function switchTab(name){document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===name));document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('active',p.id===`pane-${name}`));if(name==='saved')renderSaved()}
+async function copyText(text){try{await navigator.clipboard.writeText(text);toast('コピーしました')}catch(e){const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast('コピーしました')}catch(err){toast('コピーできません。テキストを長押ししてコピーしてください')}ta.remove()}}
+function download(name,content,type){const b=new Blob([content],{type});const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function safeName(s){return (s||'ai-drama').replace(/[\\/:*?"<>|\s]+/g,'-').slice(0,50)||'ai-drama'}
+function renderSaved(){const wrap=$('savedList');wrap.innerHTML='';if(!savedProjects.length){const e=document.createElement('div');e.className='empty';e.innerHTML='<strong>保存データはありません</strong><p>制作パックを作ったあと「現在の企画を保存」から保存できます。</p>';wrap.appendChild(e);return}savedProjects.forEach(p=>{const el=document.createElement('div');el.className='saved-item';const info=document.createElement('div');const title=document.createElement('strong');title.textContent=p.title;const small=document.createElement('small');small.textContent=`${p.genre} · 約${p.duration}分 · ${p.scenes?.length||0}シーン`;info.append(title,small);const actions=document.createElement('div');actions.style.display='flex';actions.style.gap='6px';const load=document.createElement('button');load.className='mini';load.textContent='開く';load.onclick=()=>{renderProject(p);switchTab('story');window.scrollTo({top:$('workspace').offsetTop-10,behavior:'smooth'});toast('プロジェクトを開きました')};const del=document.createElement('button');del.className='mini';del.textContent='削除';del.onclick=()=>{savedProjects=savedProjects.filter(x=>x.id!==p.id);writeSaved();toast('保存データを削除しました')};actions.append(load,del);el.append(info,actions);wrap.appendChild(el)})}
+function saveProject(){if(!currentProject){toast('先に制作パックを作成してください');return}const p=JSON.parse(JSON.stringify(currentProject));p.updatedAt=new Date().toISOString();const idx=savedProjects.findIndex(x=>x.id===p.id);if(idx>=0)savedProjects[idx]=p;else savedProjects.unshift(p);savedProjects=savedProjects.slice(0,50);writeSaved();toast('この端末に保存しました')}
+function fillDemo(){ $('projectTitle').value='最後の手紙';$('idea').value='毎日同じ駅で会う老人に傘を貸した高校生。老人が姿を見せなくなった雨の日、主人公のもとに一通の手紙が届く。';$('genre').value='感動';$('duration').value='3';$('style').value='実写映画風';$('ratio').value='9:16';$('mood').value='静かで感情的、自然な演技';$('character').value='結衣';$('age').value='高校生';$('appearance').value='黒髪のボブ、紺色の制服、赤い傘。自然な表情と控えめな演技。';const p=buildProject();renderProject(p);toast('サンプルを作成しました')}
+$('generateBtn').addEventListener('click',()=>{const p=buildProject();renderProject(p);toast('制作パックを作成しました');$('workspace').scrollIntoView({behavior:'smooth',block:'start'})});$('jumpBtn').addEventListener('click',()=>{currentProject=null;$('projectTitle').value='';$('idea').value='';$('genre').value='感動';$('duration').value='5';$('style').value='実写映画風';$('ratio').value='9:16';$('mood').value='静かで感情的、自然な演技';$('character').value='';$('age').value='';$('appearance').value='';$('emptyState').classList.remove('hidden');$('storyResult').classList.add('hidden');$('sceneEmpty').classList.remove('hidden');$('sceneList').classList.add('hidden');updateMetrics();$('projectTitle').focus();$('workspace').scrollIntoView({behavior:'smooth',block:'start'})});$('loadDemoBtn').addEventListener('click',fillDemo);document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>switchTab(t.dataset.tab)));
+$('copyAllBtn').addEventListener('click',()=>currentProject&&copyText(makePlainText(currentProject)));$('exportTxtBtn').addEventListener('click',()=>currentProject&&download(safeName(currentProject.title)+'.txt',makePlainText(currentProject),'text/plain;charset=utf-8'));$('exportJsonBtn').addEventListener('click',()=>currentProject&&download(safeName(currentProject.title)+'.json',JSON.stringify(currentProject,null,2),'application/json;charset=utf-8'));
+$('copyScriptPrompt').addEventListener('click',()=>currentProject&&copyText(currentProject.aiScriptPrompt));$('copyConsistencyPrompt').addEventListener('click',()=>currentProject&&copyText(currentProject.consistencyPrompt));$('saveProjectBtn').addEventListener('click',saveProject);$('clearSavedBtn').addEventListener('click',()=>{if(!savedProjects.length){toast('保存データはありません');return}if(confirm('このブラウザに保存したプロジェクト一覧を削除しますか？ 書き出したファイルは削除されません。')){savedProjects=[];writeSaved();toast('保存一覧を削除しました')}});$('importBtn').addEventListener('click',()=>$('importFile').click());$('importFile').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const p=JSON.parse(await f.text());if(!p||!Array.isArray(p.scenes)||!p.title)throw new Error('format');renderProject(p);toast('JSONを読み込みました');switchTab('story')}catch(err){toast('読み込めないJSONです')}e.target.value=''});
+// Restore the most recent project if one exists in local browser storage.
+if(savedProjects.length){renderSaved();updateMetrics()}else updateMetrics();
+})();
+</script>
+</body>
+</html>
